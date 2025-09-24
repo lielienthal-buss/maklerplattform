@@ -20,7 +20,7 @@ app = FastAPI(title="Yacht Platform API", version="1.0.0")
 # CORS middleware for frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify actual frontend domains
+    allow_origins=["https://maklerplattform.vercel.app"],  # In production, specify actual frontend domains
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
